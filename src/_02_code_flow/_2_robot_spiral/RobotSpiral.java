@@ -18,18 +18,18 @@ r2d2.penDown ();
 		// SPEED. Set the robot to go at max speed (100)
 r2d2.setSpeed(100);
         // LOOP. Use a for loop to repeat ALL the following lines of code 50 times. 
-for(int x = 0;x < 50; x ++)
+for(int x = 0;x < 50; x ++) {
 				// Change the robot pen color to random
 r2d2.setRandomPenColor();
 				// DRAW.    Move the robot (5*i) pixels
 				//          "i" is the variable in the for loop	
-			
+r2d2.move(5*x);			
 				// TURN.    Turn the robot (360/7) degrees to the right
-			
+r2d2.turn(360/7);			
 				// Change the robot pen width to (i)
-
+r2d2.setPenWidth(x);
 		
 		// Check the pattern against the picture in the recipe. If it matches, you are done!
-		
+}		
 	}
 }
